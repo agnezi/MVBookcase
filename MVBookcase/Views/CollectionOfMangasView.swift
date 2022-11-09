@@ -9,13 +9,19 @@
 import SwiftUI
 
 struct CollectionOfMangasView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct CollectionOfMangasView_Previews: PreviewProvider {
-    static var previews: some View {
-        CollectionOfMangasView()
-    }
+	
+	@ObservedObject var collection: Collection
+	
+	@Environment(\.managedObjectContext) var moc
+	
+	var body: some View {
+		List(collection.mangasArr) { manga in
+			MangaListItemComponent(manga: manga)
+		}
+		.navigationTitle(collection.wrappedTitle)
+		.navigationBarTitleDisplayMode(.inline)
+		.toolbar {
+			NavigationLink("Add", destination: AddMangaView(collection: collection))
+		}
+	}
 }

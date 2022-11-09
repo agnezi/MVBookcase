@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+enum VolumeStatus: Codable {
+	case missing 
+	case bought
+	case delivery
+	
+	static let allValues = [missing, bought, delivery]
+}

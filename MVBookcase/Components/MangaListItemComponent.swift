@@ -12,26 +12,37 @@ struct MangaListItemComponent: View {
 	
 	@ObservedObject var manga: Manga
 	
+	@Environment(\.managedObjectContext) var moc
+	
+	@State private var showEditMangaSheet = false
+	
 	var body: some View {
-		HStack {
+		HStack() {
+			if manga.wrappedVolume.isMultiple(of: 2) {
+				Spacer()
+			}
 			Text(manga.wrappedVolume, format: .number)
 				.fontWeight(.bold)
 				.font(.largeTitle)
-			VStack {
-				Text(manga.wrappedTitle)
-			}
+			
 		}
 		.foregroundColor(textColor(status: manga.wrappedStatus))
-		.swipeActions(edge: .trailing) {
-			Button("Edit") {
-				
+		.swipeActions(edge: .trailing, allowsFullSwipe: false) {
+			Button(action: {showEditMangaSheet.toggle()}) {
+				Label("Edit", systemImage: "pencil.circle.fill")
 			}
-			Button("Change") {
-				changeStatus(of: manga)
+			.tint(.green)
+			Button(action: {changeStatus(of: manga)}) {
+				Label("Change", systemImage: "circle.grid.cross.fill")
+					.foregroundColor(.black)
 			}
-			Button("Delete") {
-				
+			Button(action: {remove(manga)}) {
+				Label("Delete", systemImage: "trash.circle.fill")
 			}
+			.tint(.red)
+		}
+		.sheet(isPresented: $showEditMangaSheet) {
+			EditMangaView(manga: manga)
 		}
 	}
 	
@@ -64,10 +75,13 @@ struct MangaListItemComponent: View {
 			return
 		}
 	}
-}
-
-struct MangaListItem_Previews: PreviewProvider {
-	static var previews: some View {
-		MangaListItem()
+	
+	func remove(_ manga: Manga) {
+		do {
+			moc.delete(manga)
+			try moc.save()
+		} catch {
+			print("Error on delete: \(error.localizedDescription)")
+		}
 	}
 }

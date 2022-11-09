@@ -20,6 +20,15 @@ extension Collection {
     @NSManaged public var id: UUID?
     @NSManaged public var title: String?
     @NSManaged public var mangas: NSSet?
+	
+	var wrappedTitle: String {
+		return title ?? "Unknown Title"
+	}
+	
+	var mangasArr: [Manga] {
+		let set = mangas as? Set<Manga> ?? []
+		return set.sorted { $0.wrappedVolume > $1.wrappedVolume }
+	}
 
 }
 

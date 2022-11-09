@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
+    public var body: some View {
        CollectionsView()
     }
 }

@@ -9,13 +9,38 @@
 import SwiftUI
 
 struct CreateCollectionView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct CreateCollection_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateCollectionView()
-    }
+	
+	@State private var title = ""
+	
+	@Environment(\.managedObjectContext) var moc
+	@Environment(\.dismiss) var dismiss
+	
+	public var body: some View {
+		Form {
+			Section("Title") {
+				TextField("Type here", text: $title)
+			}
+			
+			Button("Create") { create() }
+		}
+		.navigationTitle("Create Collection")
+		.navigationBarTitleDisplayMode(.inline)
+	}
+	
+	
+	private func create() {
+		let collection = Collection(context: moc)
+		collection.id = UUID()
+		collection.title = title
+		do {
+			if(moc.hasChanges) {
+				try moc.save()
+			}
+		} catch {
+			print("Error trying to create collectino: \(error.localizedDescription)")
+		}
+		
+		dismiss()
+		
+	}
 }

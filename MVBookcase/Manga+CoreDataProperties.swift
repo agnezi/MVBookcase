@@ -22,6 +22,18 @@ extension Manga {
     @NSManaged public var title: String?
     @NSManaged public var volume: Int16
     @NSManaged public var collection: Collection?
+	
+	var wrappedStatus: String {
+		return status ?? "missing"
+	}
+	
+	var wrappedTitle: String {
+		return title ?? ""
+	}
+	
+	var wrappedVolume: Int {
+		return Int(volume)
+	}
 
 }
 
