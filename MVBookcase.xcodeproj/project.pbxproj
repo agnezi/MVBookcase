@@ -14,7 +14,6 @@
 		8816423928BBF9050036C03C /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816423828BBF9050036C03C /* CollectionsView.swift */; };
 		8819F3BB2911C07200D38E3F /* MVBookcase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8819F3B92911C07200D38E3F /* MVBookcase.xcdatamodeld */; };
 		882368B428BBFB410090EA76 /* VolumeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882368B328BBFB410090EA76 /* VolumeStatus.swift */; };
-		885D173128C6BA6F00090F3E /* MangaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D173028C6BA6F00090F3E /* MangaView.swift */; };
 		8867E0872911EB84001C4BE4 /* CollectionsOfMangasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867E0862911EB84001C4BE4 /* CollectionsOfMangasView.swift */; };
 		8867E08C2911F16C001C4BE4 /* Collection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867E0882911F16C001C4BE4 /* Collection+CoreDataClass.swift */; };
 		8867E08D2911F16C001C4BE4 /* Collection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867E0892911F16C001C4BE4 /* Collection+CoreDataProperties.swift */; };
@@ -23,10 +22,6 @@
 		88B298112908CC890013899D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B298102908CC890013899D /* DataController.swift */; };
 		88B29827290990E10013899D /* AddMangaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B29826290990E10013899D /* AddMangaView.swift */; };
 		88B2B7B62915FEB500C62964 /* EditMangaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B7B52915FEB500C62964 /* EditMangaView.swift */; };
-		88B2B7BE2916051200C62964 /* WatchMVBookcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B7BD2916051200C62964 /* WatchMVBookcaseApp.swift */; };
-		88B2B7C02916051200C62964 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B7BF2916051200C62964 /* ContentView.swift */; };
-		88B2B7C22916051300C62964 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B2B7C12916051300C62964 /* Assets.xcassets */; };
-		88B2B7C52916051300C62964 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88B2B7C42916051300C62964 /* Preview Assets.xcassets */; };
 		88B2B7D52916C13700C62964 /* MangaStatusPickerComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B2B7D42916C13700C62964 /* MangaStatusPickerComponent.swift */; };
 		88C149552912E95400045F20 /* CreateCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C149542912E95400045F20 /* CreateCollectionView.swift */; };
 		88C149572912EE8700045F20 /* CollectionOfMangasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C149562912EE8700045F20 /* CollectionOfMangasView.swift */; };
@@ -42,7 +37,6 @@
 		8816423828BBF9050036C03C /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
 		8819F3BA2911C07200D38E3F /* MVBookcase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVBookcase.xcdatamodel; sourceTree = "<group>"; };
 		882368B328BBFB410090EA76 /* VolumeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeStatus.swift; sourceTree = "<group>"; };
-		885D173028C6BA6F00090F3E /* MangaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaView.swift; sourceTree = "<group>"; };
 		8867E0862911EB84001C4BE4 /* CollectionsOfMangasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsOfMangasView.swift; sourceTree = "<group>"; };
 		8867E0882911F16C001C4BE4 /* Collection+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8867E0892911F16C001C4BE4 /* Collection+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -51,13 +45,7 @@
 		88B298102908CC890013899D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		88B29826290990E10013899D /* AddMangaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMangaView.swift; sourceTree = "<group>"; };
 		88B2B7B52915FEB500C62964 /* EditMangaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMangaView.swift; sourceTree = "<group>"; };
-		88B2B7BB2916051200C62964 /* WatchMVBookcase Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchMVBookcase Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88B2B7BD2916051200C62964 /* WatchMVBookcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchMVBookcaseApp.swift; sourceTree = "<group>"; };
-		88B2B7BF2916051200C62964 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		88B2B7C12916051300C62964 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		88B2B7C42916051300C62964 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88B2B7CC2916060700C62964 /* MVBookcase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MVBookcase.entitlements; sourceTree = "<group>"; };
-		88B2B7CD2916060D00C62964 /* WatchMVBookcase Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchMVBookcase Watch App.entitlements"; sourceTree = "<group>"; };
 		88B2B7D42916C13700C62964 /* MangaStatusPickerComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangaStatusPickerComponent.swift; sourceTree = "<group>"; };
 		88C149542912E95400045F20 /* CreateCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCollectionView.swift; sourceTree = "<group>"; };
 		88C149562912EE8700045F20 /* CollectionOfMangasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOfMangasView.swift; sourceTree = "<group>"; };
@@ -72,13 +60,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88B2B7B82916051200C62964 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,7 +67,6 @@
 			isa = PBXGroup;
 			children = (
 				8816422828BBF3000036C03C /* MVBookcase */,
-				88B2B7BC2916051200C62964 /* WatchMVBookcase Watch App */,
 				8816422728BBF3000036C03C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				8816422628BBF3000036C03C /* MVBookcase.app */,
-				88B2B7BB2916051200C62964 /* WatchMVBookcase Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,14 +110,10 @@
 		8816423728BBF8FC0036C03C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				889825BB29252AC900029D37 /* Manga */,
 				8816422B28BBF3000036C03C /* ContentView.swift */,
 				8816423828BBF9050036C03C /* CollectionsView.swift */,
 				88C149542912E95400045F20 /* CreateCollectionView.swift */,
-				885D173028C6BA6F00090F3E /* MangaView.swift */,
-				88B29826290990E10013899D /* AddMangaView.swift */,
-				88B2B7B52915FEB500C62964 /* EditMangaView.swift */,
-				8867E0862911EB84001C4BE4 /* CollectionsOfMangasView.swift */,
-				88C149562912EE8700045F20 /* CollectionOfMangasView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,24 +126,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		88B2B7BC2916051200C62964 /* WatchMVBookcase Watch App */ = {
+		889825BB29252AC900029D37 /* Manga */ = {
 			isa = PBXGroup;
 			children = (
-				88B2B7CD2916060D00C62964 /* WatchMVBookcase Watch App.entitlements */,
-				88B2B7BD2916051200C62964 /* WatchMVBookcaseApp.swift */,
-				88B2B7BF2916051200C62964 /* ContentView.swift */,
-				88B2B7C12916051300C62964 /* Assets.xcassets */,
-				88B2B7C32916051300C62964 /* Preview Content */,
+				88B29826290990E10013899D /* AddMangaView.swift */,
+				88B2B7B52915FEB500C62964 /* EditMangaView.swift */,
+				8867E0862911EB84001C4BE4 /* CollectionsOfMangasView.swift */,
+				88C149562912EE8700045F20 /* CollectionOfMangasView.swift */,
 			);
-			path = "WatchMVBookcase Watch App";
-			sourceTree = "<group>";
-		};
-		88B2B7C32916051300C62964 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				88B2B7C42916051300C62964 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = Manga;
 			sourceTree = "<group>";
 		};
 		88C1495829133E8700045F20 /* Components */ = {
@@ -200,23 +166,6 @@
 			productReference = 8816422628BBF3000036C03C /* MVBookcase.app */;
 			productType = "com.apple.product-type.application";
 		};
-		88B2B7BA2916051200C62964 /* WatchMVBookcase Watch App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 88B2B7C62916051300C62964 /* Build configuration list for PBXNativeTarget "WatchMVBookcase Watch App" */;
-			buildPhases = (
-				88B2B7B72916051200C62964 /* Sources */,
-				88B2B7B82916051200C62964 /* Frameworks */,
-				88B2B7B92916051200C62964 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "WatchMVBookcase Watch App";
-			productName = "WatchMVBookcase Watch App";
-			productReference = 88B2B7BB2916051200C62964 /* WatchMVBookcase Watch App.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -229,9 +178,6 @@
 				TargetAttributes = {
 					8816422528BBF3000036C03C = {
 						CreatedOnToolsVersion = 13.4.1;
-					};
-					88B2B7BA2916051200C62964 = {
-						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -249,7 +195,6 @@
 			projectRoot = "";
 			targets = (
 				8816422528BBF3000036C03C /* MVBookcase */,
-				88B2B7BA2916051200C62964 /* WatchMVBookcase Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -261,15 +206,6 @@
 			files = (
 				8816423128BBF3000036C03C /* Preview Assets.xcassets in Resources */,
 				8816422E28BBF3000036C03C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88B2B7B92916051200C62964 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88B2B7C52916051300C62964 /* Preview Assets.xcassets in Resources */,
-				88B2B7C22916051300C62964 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +223,6 @@
 				88B298112908CC890013899D /* DataController.swift in Sources */,
 				8867E08E2911F16C001C4BE4 /* Manga+CoreDataClass.swift in Sources */,
 				8816423928BBF9050036C03C /* CollectionsView.swift in Sources */,
-				885D173128C6BA6F00090F3E /* MangaView.swift in Sources */,
 				8816422C28BBF3000036C03C /* ContentView.swift in Sources */,
 				8816422A28BBF3000036C03C /* MVBookcaseApp.swift in Sources */,
 				88B2B7D52916C13700C62964 /* MangaStatusPickerComponent.swift in Sources */,
@@ -298,15 +233,6 @@
 				88B29827290990E10013899D /* AddMangaView.swift in Sources */,
 				88B2B7B62915FEB500C62964 /* EditMangaView.swift in Sources */,
 				8819F3BB2911C07200D38E3F /* MVBookcase.xcdatamodeld in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		88B2B7B72916051200C62964 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				88B2B7C02916051200C62964 /* ContentView.swift in Sources */,
-				88B2B7BE2916051200C62964 /* WatchMVBookcaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,70 +413,6 @@
 			};
 			name = Release;
 		};
-		88B2B7C72916051300C62964 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "WatchMVBookcase Watch App/WatchMVBookcase Watch App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchMVBookcase Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 938L7H5GMC;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchMVBookcase;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.1;
-			};
-			name = Debug;
-		};
-		88B2B7C82916051300C62964 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_ENTITLEMENTS = "WatchMVBookcase Watch App/WatchMVBookcase Watch App.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WatchMVBookcase Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = 938L7H5GMC;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = WatchMVBookcase;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.1;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -568,15 +430,6 @@
 			buildConfigurations = (
 				8816423528BBF3000036C03C /* Debug */,
 				8816423628BBF3000036C03C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		88B2B7C62916051300C62964 /* Build configuration list for PBXNativeTarget "WatchMVBookcase Watch App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				88B2B7C72916051300C62964 /* Debug */,
-				88B2B7C82916051300C62964 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
