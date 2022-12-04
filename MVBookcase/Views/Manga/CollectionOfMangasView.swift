@@ -15,6 +15,8 @@ struct CollectionOfMangasView: View {
 	
 	@Environment(\.managedObjectContext) var moc
 	
+	
+	
 	var filteredListOfMangas: [Manga] {
 		switch listType {
 		case .all:
@@ -50,12 +52,27 @@ struct CollectionOfMangasView: View {
 			List(filteredListOfMangas) { manga in
 				MangaListItemComponent(manga: manga)
 			}
+		
+			
+			HStack(spacing: 24) {
+				NavigationLink {
+					AddMangaView(collection: collection)
+				} label: {
+					Label("Add One", systemImage: "plus")
+				}
+				.borderedStyle()
+				
+				NavigationLink {
+					AddMangaView(collection: collection)
+				} label: {
+					Label("Add Many", systemImage: "list.bullet")
+				}
+				.borderedStyle()
+			}
+			
 		}
 		.padding([.top], 30)
 		.navigationTitle(collection.wrappedTitle)
 		.navigationBarTitleDisplayMode(.inline)
-		.toolbar {
-			NavigationLink("Add", destination: AddMangaView(collection: collection))
-		}
 	}
 }

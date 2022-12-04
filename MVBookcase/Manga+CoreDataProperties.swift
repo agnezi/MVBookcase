@@ -1,9 +1,10 @@
 //
-//
 // MVBookcase
-// Created by: itsjagnezi on 21/10/22
+// Created by: itsjagnezi on 28/11/22
 // Copyright (c) today and beyond
 //
+//
+
 import Foundation
 import CoreData
 
@@ -21,16 +22,16 @@ extension Manga {
     @NSManaged public var collection: Collection?
 	
 	var wrappedStatus: String {
-		return status ?? "missing"
-	}
-	
-	var wrappedTitle: String {
-		return title ?? ""
-	}
-	
-	var wrappedVolume: Int {
-		return Int(volume)
-	}
+			return status ?? "missing"
+		}
+		
+		var wrappedTitle: String {
+			return title ?? ""
+		}
+		
+		var wrappedVolume: Int {
+			return Int(volume)
+		}
 
 }
 

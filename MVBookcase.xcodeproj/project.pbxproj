@@ -14,6 +14,8 @@
 		8816423928BBF9050036C03C /* CollectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8816423828BBF9050036C03C /* CollectionsView.swift */; };
 		8819F3BB2911C07200D38E3F /* MVBookcase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8819F3B92911C07200D38E3F /* MVBookcase.xcdatamodeld */; };
 		882368B428BBFB410090EA76 /* VolumeStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882368B328BBFB410090EA76 /* VolumeStatus.swift */; };
+		885D623D293CBFA200D0861A /* AddMultMangaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D623C293CBFA200D0861A /* AddMultMangaView.swift */; };
+		885D6242293CE06400D0861A /* BorderedNavigationLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D6241293CE06400D0861A /* BorderedNavigationLink.swift */; };
 		8867E0872911EB84001C4BE4 /* CollectionsOfMangasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867E0862911EB84001C4BE4 /* CollectionsOfMangasView.swift */; };
 		8867E08C2911F16C001C4BE4 /* Collection+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867E0882911F16C001C4BE4 /* Collection+CoreDataClass.swift */; };
 		8867E08D2911F16C001C4BE4 /* Collection+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8867E0892911F16C001C4BE4 /* Collection+CoreDataProperties.swift */; };
@@ -28,6 +30,19 @@
 		88C1495A29133E9500045F20 /* MangaListItemComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C1495929133E9500045F20 /* MangaListItemComponent.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		88BD1B1D2935467700829225 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8816422628BBF3000036C03C /* MVBookcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVBookcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8816422928BBF3000036C03C /* MVBookcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVBookcaseApp.swift; sourceTree = "<group>"; };
@@ -37,6 +52,8 @@
 		8816423828BBF9050036C03C /* CollectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsView.swift; sourceTree = "<group>"; };
 		8819F3BA2911C07200D38E3F /* MVBookcase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVBookcase.xcdatamodel; sourceTree = "<group>"; };
 		882368B328BBFB410090EA76 /* VolumeStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeStatus.swift; sourceTree = "<group>"; };
+		885D623C293CBFA200D0861A /* AddMultMangaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMultMangaView.swift; sourceTree = "<group>"; };
+		885D6241293CE06400D0861A /* BorderedNavigationLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedNavigationLink.swift; sourceTree = "<group>"; };
 		8867E0862911EB84001C4BE4 /* CollectionsOfMangasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsOfMangasView.swift; sourceTree = "<group>"; };
 		8867E0882911F16C001C4BE4 /* Collection+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+CoreDataClass.swift"; sourceTree = "<group>"; };
 		8867E0892911F16C001C4BE4 /* Collection+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -82,6 +99,7 @@
 		8816422828BBF3000036C03C /* MVBookcase */ = {
 			isa = PBXGroup;
 			children = (
+				885D6240293CE05500D0861A /* ViewModifiers */,
 				8816422F28BBF3000036C03C /* Preview Content */,
 				8819F3B92911C07200D38E3F /* MVBookcase.xcdatamodeld */,
 				88B2B7CC2916060700C62964 /* MVBookcase.entitlements */,
@@ -126,13 +144,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		885D6240293CE05500D0861A /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				885D6241293CE06400D0861A /* BorderedNavigationLink.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
 		889825BB29252AC900029D37 /* Manga */ = {
 			isa = PBXGroup;
 			children = (
 				88B29826290990E10013899D /* AddMangaView.swift */,
+				885D623C293CBFA200D0861A /* AddMultMangaView.swift */,
 				88B2B7B52915FEB500C62964 /* EditMangaView.swift */,
-				8867E0862911EB84001C4BE4 /* CollectionsOfMangasView.swift */,
 				88C149562912EE8700045F20 /* CollectionOfMangasView.swift */,
+				8867E0862911EB84001C4BE4 /* CollectionsOfMangasView.swift */,
 			);
 			path = Manga;
 			sourceTree = "<group>";
@@ -156,6 +183,7 @@
 				8816422228BBF3000036C03C /* Sources */,
 				8816422328BBF3000036C03C /* Frameworks */,
 				8816422428BBF3000036C03C /* Resources */,
+				88BD1B1D2935467700829225 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -216,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				885D623D293CBFA200D0861A /* AddMultMangaView.swift in Sources */,
 				8867E0872911EB84001C4BE4 /* CollectionsOfMangasView.swift in Sources */,
 				88C149552912E95400045F20 /* CreateCollectionView.swift in Sources */,
 				8867E08C2911F16C001C4BE4 /* Collection+CoreDataClass.swift in Sources */,
@@ -223,6 +252,7 @@
 				88B298112908CC890013899D /* DataController.swift in Sources */,
 				8867E08E2911F16C001C4BE4 /* Manga+CoreDataClass.swift in Sources */,
 				8816423928BBF9050036C03C /* CollectionsView.swift in Sources */,
+				885D6242293CE06400D0861A /* BorderedNavigationLink.swift in Sources */,
 				8816422C28BBF3000036C03C /* ContentView.swift in Sources */,
 				8816422A28BBF3000036C03C /* MVBookcaseApp.swift in Sources */,
 				88B2B7D52916C13700C62964 /* MangaStatusPickerComponent.swift in Sources */,
@@ -356,6 +386,7 @@
 		8816423528BBF3000036C03C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MVBookcase/MVBookcase.entitlements;
@@ -368,8 +399,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,6 +417,7 @@
 		8816423628BBF3000036C03C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = MVBookcase/MVBookcase.entitlements;
@@ -398,8 +430,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

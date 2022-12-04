@@ -7,6 +7,7 @@
 
 
 import SwiftUI
+import WidgetKit
 
 struct CreateCollectionView: View {
 	
@@ -39,7 +40,7 @@ struct CreateCollectionView: View {
 		} catch {
 			print("Error trying to create collectino: \(error.localizedDescription)")
 		}
-		
+		WidgetCenter.shared.reloadTimelines(ofKind: "tkoff0110.MVBookcase.MangasExtension")
 		dismiss()
 		
 	}

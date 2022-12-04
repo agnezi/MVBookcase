@@ -16,15 +16,14 @@ struct CollectionsView: View {
 			List(collections, id:\.self) { collection in
 				switch collection {
 				case "Mangas": NavigationLink(collection, destination: CollectionsOfMangasView())
-//				case "Books": NavigationLink(collection, destination: CollectionsOfMangasView())
 				default: NavigationLink(collection, destination: CollectionsOfMangasView())
 				}
 			}
 			.navigationTitle("Collections")
 			.navigationBarBackButtonHidden(true)
-			.toolbar {
-				NavigationLink("Create", destination: CreateCollectionView())
-			}
+//			.toolbar {
+//				NavigationLink("Create", destination: CreateCollectionView())
+//			}
 		}
 	}
 }
